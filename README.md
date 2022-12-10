@@ -13,3 +13,5 @@ Als Bonus erlaubt es obendrein die schnelle Navigation aus der Grundstellung und
 Das hier vorgestellte Programm ist für Windows entwickelt und mit Autohotkey realisiert. Das Konzept lässt sich aber auch unter Linux oder Mac OS umsetzen. Der Grundgedanke ist, dass man die Feststelltaste (CapsLock) als zusätzliche Modifiertaste verwendet und damit eine vergrößerte Funktionalität erreicht. Am deutschen Tastaturlayout als solches wird nichts geändert. Das hat den Vorteil, dass man zum einen den Rechner jederzeit mit anderen teilen kann. Zum anderen hat man auch keine Probleme, wenn man selbst an einem anderen Rechner arbeiten muss, bei dem DeutschlandPlus nicht aktiv ist. Nicht zuletzt funktioniert diese Lösung auch in gleicher Weise nicht nur auf allen üblichen Tastaturen, sondern auch bei Notebooks, die teils eine abweichende Anordnung der Tasten haben. Für mich hat sich DeutschlandPlus nun schon seit 2008 bewährt!
 
 Eine ausführliche Beschreibung mit Screenshots findet sich auf meinem Blog [keyboard.hashnode.dev](https://keyboard.hashnode.dev)  
+
+Ich bin unter rpnfan@gmail.com zu erreichen.
