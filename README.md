@@ -4,7 +4,7 @@
 Adding symbols and functions to the standard German keyboard layout - Program for Windows (Autohotkey) 
 
 ## Installation
-Kopiere eine der beiden ausführbaren (.exe-Dateien) und die Hilfe-Datei in einen Ordner deiner Wahl. Alternativ kann auch das Autohotkey-Script genutzt werden, wenn Autohotkey installiert ist 
+Kopiere eine der beiden ausführbaren (.exe-Dateien) und die Hilfe-Datei (DeutschlandPlus-Hilfe.html) in einen Ordner deiner Wahl. Alternativ kann auch das Autohotkey-Script genutzt werden, wenn Autohotkey installiert ist 
 
 ## Bequemer und schneller tippen mit DeutschlandPlus
 *Bequeme Navigation, Sonderzeichen [ ] { } \ @ € µ … und mehr*
