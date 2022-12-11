@@ -1,8 +1,20 @@
-﻿; DeutschlandPlus 1.0
-; 2022-12-10
-; Versionssyntax: major.minorLaufendeNummer
+﻿; DeutschlandPlus 1.01
+; 2022-12-11
+; contact: rpnfan@gmail.com
 
 ; Der Strichpunkt ist das Kommentarzeichen - Entfernen, wenn eine Zeile wieder aktiv sein soll!
+
+; Versionssyntax: major.minorLaufendeNummer
+; + ergänzt
+; - gelöscht
+; ! Bugfix
+; ~ geändert
+
+; 2022-12-11    1.01    + Hilfe-Funktion mit F1 → Übersicht mit allen Kürzeln wird im Browser geöffnet.
+;                       + zusätzliche hoch- und tiefgestellte Zeichen (minus, Buchstaben…)
+;                       + weitere Zeichen (Währungen, Daumen-hoch usw.)
+;                       ! arrows, minus/plus und µ korrigiert
+
 
 ; =================== allgemeine Einstellungen ==============
 
@@ -24,10 +36,19 @@ sc03a::
     return
 */ ; uncomment block - end
 
+; Funktion um URLs öffnen zu können
+OpenURL(u) {
+	WinActivate, Program Manager
+	Run %u%
+	return
+}
+
 ; =====================================================
 ; ===================== HOTKEYS =======================
 ; =====================================================
 ; Alle AltGr-Zeichen über CapsLock verfügbar machen, sowie alle AltGr-Zeichen der linken Hand auf der rechten Hand verfügbar und nicht zuletzt den Steuerblock (Pfeile usw.) auch auf der rechten Hand in Grundstellung nutzbar.
+
+sc03a & F1::OpenURL("DeutschlandPlus-Hilfe.html")	; F1-Kombi für Hilfe - Übersicht mit allen Kürzeln
 
 
 ; --- Bewegungshotkeys ------
@@ -90,11 +111,6 @@ sc03a & Enter:: AltTab
 
 ; beliebige Unicode, HTLM, json usw. Zeichen und entsprechende Kodierungen
 ; "Any-key"
-OpenURL(u) {
-	WinActivate, Program Manager
-	Run %u%
-	return
-}
 sc03a & RShift:: OpenURL("https://www.amp-what.com") ; "Any-Key"
 
 
@@ -169,16 +185,118 @@ sc03a & RShift:: OpenURL("https://www.amp-what.com") ; "Any-Key"
 :*?:^8#::{U+2078} ; hochgestellt 8
 :*?:^9#::{U+2079} ; hochgestellt 9
 :*?:^+#::{U+207A} ; hochgestellt +
+:*?:^-#::{U+207B} ; hochgestellt minus
+:*?:^=#::{U+207C} ; hochgestellt =
+:*?:^(#::{U+207D} ; hochgestellt Klammer links
+:*?:^)#::{U+207E} ; hochgestellt Klammer rechts
+
+; hochgestellte Buchstaben
+:*?:^a#::{U+1D43} ; hochgestellt a
+:*?:^b#::{U+1D47} ; hochgestellt b
+:*?:^c#::{U+1D9C} ; hochgestellt c
+:*?:^d#::{U+1D48} ; hochgestellt d
+:*?:^e#::{U+1D49} ; hochgestellt e
+:*?:^f#::{U+1DA0} ; hochgestellt f
+:*?:^g#::{U+1D4D} ; hochgestellt g
+:*?:^h#::{U+02B0} ; hochgestellt h
+:*?:^i#::{U+2071} ; hochgestellt i
+:*?:^j#::{U+02B2} ; hochgestellt j
+:*?:^k#::{U+1D4F} ; hochgestellt k
+:*?:^l#::{U+02E1} ; hochgestellt l
+:*?:^m#::{U+1D50} ; hochgestellt m
+:*?:^n#::{U+207F} ; hochgestellt n
+:*?:^o#::{U+1D52} ; hochgestellt o
+:*?:^p#::{U+1D56} ; hochgestellt p
+:*?:^q#::{U+107A5} ; hochgestellt q
+:*?:^r#::{U+02B3} ; hochgestellt r
+:*?:^s#::{U+02E2} ; hochgestellt s
+:*?:^t#::{U+1D57} ; hochgestellt t
+:*?:^u#::{U+1D58} ; hochgestellt u
+:*?:^v#::{U+1D5B} ; hochgestellt v
+:*?:^w#::{U+02B7} ; hochgestellt w
+:*?:^x#::{U+02E3} ; hochgestellt x
+:*?:^y#::{U+02B8} ; hochgestellt y
+:*?:^z#::{U+1DBB} ; hochgestellt z
+
+; Großbuchstaben werden -- warum auch immer -- als Kleinbuchstaben ausgegeben!?
+:*?:^A#::{U+1D2C} ; hochgestellt A
+:*?:^B#::{U+1D2D} ; hochgestellt B
+:*?:^C#::{U+A7FD} ; hochgestellt C
+:*?:^D#::{U+1D30} ; hochgestellt D
+:*?:^E#::{U+1D31} ; hochgestellt E
+:*?:^F#::{U+A7F3} ; hochgestellt F
+:*?:^G#::{U+1D33} ; hochgestellt G
+:*?:^H#::{U+1D34} ; hochgestellt H
+:*?:^I#::{U+1D35} ; hochgestellt I
+:*?:^J#::{U+1D36} ; hochgestellt J
+:*?:^K#::{U+1D37} ; hochgestellt K
+:*?:^L#::{U+1D38} ; hochgestellt L
+:*?:^M#::{U+1D39} ; hochgestellt M
+:*?:^N#::{U+1D3A} ; hochgestellt N
+:*?:^O#::{U+1D3C} ; hochgestellt O
+:*?:^P#::{U+1D3E} ; hochgestellt P
+:*?:^Q#::{U+A74F} ; hochgestellt Q
+:*?:^R#::{U+1D3F} ; hochgestellt R
+; S fehlt
+:*?:^T#::{U+1D40} ; hochgestellt T
+:*?:^U#::{U+1D41} ; hochgestellt U
+:*?:^V#::{U+2C7D} ; hochgestellt V
+:*?:^W#::{U+1D42} ; hochgestellt W
+; hochgestellt X fehlt
+; hochgestellt Y fehlt
+; hochgestellt Z fehlt
+
+; tiefgestellte Zahlen und Buchstaben
+:*?:_0#::{U+2080} ; tiefgestellt 0
+:*?:_1#::{U+2081} ; tiefgestellt 1
+:*?:_2#::{U+2082} ; tiefgestellt 2
+:*?:_3#::{U+2083} ; tiefgestellt 3
+:*?:_4#::{U+2084} ; tiefgestellt 4
+:*?:_5#::{U+2085} ; tiefgestellt 5
+:*?:_6#::{U+2086} ; tiefgestellt 6
+:*?:_7#::{U+2087} ; tiefgestellt 7
+:*?:_8#::{U+2088} ; tiefgestellt 8
+:*?:_9#::{U+2089} ; tiefgestellt 9
+:*?:_+#::{U+208A} ; tiefgestellt +
+:*?:_-#::{U+208B} ; tiefgestellt -
+:*?:_=#::{U+208C} ; tiefgestellt =
+:*?:_(#::{U+208D} ; tiefgestellt (
+:*?:_)#::{U+208E} ; tiefgestellt )
+:*?:_+2#::{U+2A27} ; tiefgestellt +2
+
+:*?:_a#::{U+2090} ; tiefgestellt a
+:*?:_e#::{U+2091} ; tiefgestellt e
+:*?:_i#::{U+1D62} ; tiefgestellt i
+:*?:_h#::{U+2095} ; tiefgestellt h
+:*?:_j#::{U+2C7C} ; tiefgestellt j
+:*?:_k#::{U+2096} ; tiefgestellt k
+:*?:_l#::{U+2097} ; tiefgestellt l
+:*?:_m#::{U+2098} ; tiefgestellt m
+:*?:_n#::{U+2099} ; tiefgestellt n
+:*?:_o#::{U+2092} ; tiefgestellt o
+:*?:_p#::{U+209a} ; tiefgestellt p
+:*?:_r#::{U+1D63} ; tiefgestellt r
+:*?:_s#::{U+209B} ; tiefgestellt s
+:*?:_t#::{U+209C} ; tiefgestellt t
+:*?:_u#::{U+1D64} ; tiefgestellt u
+:*?:_v#::{U+1D65} ; tiefgestellt v
+:*?:_x#::{U+2093} ; tiefgestellt x
+:*?:_beta#::{U+1D66} ; tiefgestellt beta
+:*?:_gamma#::{U+1D67} ; tiefgestellt gamma
+:*?:_rho#::{U+1D68} ; tiefgestellt rho
+:*?:_phi#::{U+1D69} ; tiefgestellt phi
+:*?:_chi#::{U+1D6A} ; tiefgestellt chi
 
 
 ; Trema auf i und e (für Niederländisch)
 :*?:i#::ï
 :*?:e#::ë
+:*?:I#::Ï
+:*?:E#::Ë
 :*?:y#::ÿ
 
-
-; Unicode-Zeichen können auf folgende Weise realisiert werden:
-; Herzchen, Smileys usw. gibt es auch als Unicode, brauch' ich nie und hab' ich mir gespart... einfach entsprechend erweitern wer Zeichen vermisst und mit für ihm sinnigen Kürzel belegen! :-)
+; ß als alternative Eingabemöglichkeit
+; :*?:s#::ß
 
 ; Brüche
 :*?:12#::{U+00BD} ; ½
@@ -195,36 +313,29 @@ sc03a & RShift:: OpenURL("https://www.amp-what.com") ; "Any-Key"
 :*?:58#::{U+215D} ; ⅝
 :*?:78#::{U+215E} ; ⅞
 
-; Pfeile und Gleichheiten
+; Pfeile
 :*?:->::{U+2192} ; Pfeil
 :*?:ar#::{U+2192} ; Pfeil (Arrow right)
 :*?:al#::{U+2190} ; Pfeil links (Arrow left)
 :*?:<-::{U+2190} ; Pfeil links
 :*?:=>::{U+21D2} ; Doppelpfeil
 :*?:dr#::{U+21D2} ; Doppelpfeil (double [arrow] right)
-:*?:<=::{U+21D0} ; Doppelpfeil links
-:*?:dl#::{U+21D0} ; Doppelpfeil (double [arrow] right)
+:*?:dl#::{U+21D0} ; Doppelpfeil (double [arrow] left)
 :*?:_>::{U+21E8 } ; Weißer Pfeil
 :*?:wa#::{U+21E8 } ; Weißer Pfeil (white arrow)
-:*?:lra::{U+2194} ; left right arrow
-:*?:lral::{U+27F7} ; left right arrow long
-:*?:lrda::{U+21DF} ; left right double arrow
-:*?:>=::{U+2265} ; greater or equal
-:*?:<=::{U+2264} ; smaller or equal
-:*?:!=#::{U+2260} ; unequal
-
-; ============================= Allchars-Zeichen ========================
-; alle möglichen Mathe- und typografischen Zeichen. Nach Lust und Laune erweitern oder ändern... :-)
-
-; Lines and Dots
-:*?:s-#::­
-:*?:^_#::¯
-:*?:-,#::¬ 
-:*?:*.#::• ; bullet dick
-:*?:..#::· ; bullet mini
-
+:*?:lra#::{U+2194} ; left right arrow
+:*?:lrda#::{U+21D4} ; left right double arrow
+:*?:lraa#::{U+27F7} ; left right arrow long
+:*?:lrdaa#::{U+27FA} ; left right double arrow long
 
 ;Math
+:*?:>=#::{U+2265} ; greater or equal
+:*?:<=#::{U+2264} ; smaller or equal
+:*?:!=#::{U+2260} ; unequal
+:*?:almost=#::{U+2248} ; approximately , almost equal
+:*?:def#::{U+225D} ; equal to definition
+:*?:almost=ra#::{U+2975} ; almost equal right arrow
+:*?:not#::¬ ; not
 :*?:xx#::×
 :*?:div#::÷
 :*?::-#::÷
@@ -234,9 +345,9 @@ sc03a & RShift:: OpenURL("https://www.amp-what.com") ; "Any-Key"
 :*?:prom#::‰ ; Promille
 :*?:+-#::±
 :*?:pm#::±
-:*?:-+#::± ; minus / plus sign
+:*?:-+#::∓ ; minus / plus sign
 :*?:mp#::∓ ; minus / plus sign
-:*?:,u#::∓
+:*?:,u#::µ
 :*?:dg#::° ; degree 
 :*?:deg#::° ; degree
 :*?:grad#::° ; Grad
@@ -245,11 +356,34 @@ sc03a & RShift:: OpenURL("https://www.amp-what.com") ; "Any-Key"
 :*?:min#::{U+2212} ; −  minus, z.B. 2 − 3 = ˗1
 :*?:prime#::{U+2032} ; ′ prime, z.B. der Farbwert u′v′ beträgt …
 
-; Punctation Marks
-:*?:3.#::…  ; (3 Punkte als ein Zeichen, nicht trennbar!)
-:*?:sp#::   ; (geschütztes?) Leerzeichen
 
-; ============================= Allchars-End ===============================
+; Währungen
+:*?:pound#::{U+00A3} ; £ Pound (english)
+:*?:yen#::{U+00A5} ;¥ Yen
+:*?:curr#::{U+00A4} ;¤ Currency Allgemeines Währungssymbol
+:*?:cent#::{U+00A2} ;¢ Centzeichen
+
+; Lines and Dots
+:*?:^_#::¯
+:*?:-,#::¬ 
+:*?:*.#::• ; bullet dick
+:*?:..#::· ; bullet mini
+:*?:3.#::…  ; (3 Punkte als ein Zeichen, nicht trennbar!)
+
+; Verschiedenes
+:*?:!#::{U+00A1} ; ¡ Umgekehrtes Ausrufezeichen
+:*?:--#::{U+00A6} ; ¦ unterbrochener Strich
+:*?:pg#::{U+00A7} ; § Paragraph
+:*?:trema#::{U+00A8} ; ¨ Trema
+:*?:reg#::{U+00AE} ; ® Registered Trademark
+:*?:absatz#::{U+00B6} ; ¶ Absatzzeichen
+:*?:klopapier#::{U+1F9FB} ; Toilettenpapier
+:*?:dh#::{U+1F44D} ; Daumen hoch
+:*?:tu#::{U+1F44D} ; thumbs up
+
+; Unicode-Zeichen können mit {+xxxx} folgende Weise realisiert werden, siehe die vielen Beispiele im Skript
+; Herzchen, Smileys usw. gibt es auch als Unicode, brauch' ich nie und hab' ich mir gespart... einfach entsprechend erweitern wer Zeichen vermisst und mit für ihm sinnigen Kürzel belegen! :-)
+
 
 ; ========= Klammern auf der Grundreihe ==============
 ; Folgende Zeilen auskommentieren, wenn man die Klammern und Backslash als Drei-Buchstabenkürzel auf der Grundreihe tippen will. Sehr praktisch zum programmieren oder für LaTeX. Normalerweise kommen die Buchstabenkombis nicht in Wörtern vor. Falls doch, kann man z. B. f [leer] uu tippen und dann das Leer per Hand löschen... Wer im FKK-Verein ist, braucht natürlich dann doch auch ein anderes Kürzel ,-)

@@ -1,4 +1,6 @@
-# CapsLock-Taste als Modifier – Kombinationen
+# DeutschlandPlus Hilfe
+2022-12-11
+## CapsLock-Taste als Modifier – Kombinationen
 
 | **Taste** | **Zeichen/ Funktion** | **Merkhilfe** |
 |---------- |-------                |-------|
@@ -41,7 +43,7 @@
 |Rechts-Shift|Any|öffnet Website mit Suche für alle Unicode-Zeichen|
 
 
-# Hotstrings – Textkürzel
+## Hotstrings – Textkürzel
 
  Die meisten Kürzel kann man sicher leicht behalten. Die typische Form ist **kürzelwort#**  – meist ist das Kürzel 2 oder 3 Buchstaben und wird in aller Regel mit einem Hashtag beendet. Zeichen, die man öfter braucht, wird man so schnell im Kopf „abspeichern“.
 

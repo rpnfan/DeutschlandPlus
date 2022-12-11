@@ -1,0 +1,1270 @@
+<!DOCTYPE html><html><head>
+      <title>DeutschlandPlus-Hilfe</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\pit\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.6.5\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="deutschlandplus-hilfe">DeutschlandPlus Hilfe</h1>
+
+<p>2022-12-11</p>
+<h2 class="mume-header" id="capslock-taste-als-modifier-kombinationen">CapsLock-Taste als Modifier &#x2013; Kombinationen</h2>
+
+<table>
+<thead>
+<tr>
+<th><strong>Taste</strong></th>
+<th><strong>Zeichen/ Funktion</strong></th>
+<th><strong>Merkhilfe</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;</td>
+<td>|</td>
+<td>alle AltGr-Zeichen auch &#xFC;ber CapsLock-Kombi erreichbar!</td>
+</tr>
+<tr>
+<td>+</td>
+<td>~</td>
+<td></td>
+</tr>
+<tr>
+<td>E</td>
+<td>&#x20AC;</td>
+<td></td>
+</tr>
+<tr>
+<td>Q</td>
+<td>@</td>
+<td></td>
+</tr>
+<tr>
+<td>&#xDF;</td>
+<td>|</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>&#xB2;</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>&#xB3;</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>{</td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>[</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>]</td>
+<td></td>
+</tr>
+<tr>
+<td>0</td>
+<td>}</td>
+<td></td>
+</tr>
+<tr>
+<td><em><strong>neue Belegungen</strong></em></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&#xB4;</td>
+<td>&#xB2;</td>
+<td>2 Striche &#x2192; hoch 2</td>
+</tr>
+<tr>
+<td>.</td>
+<td>&#xB3;</td>
+<td>3 Punkte &#x2192; hoch 3</td>
+</tr>
+<tr>
+<td>#</td>
+<td>|</td>
+<td>Striche auf der Taste</td>
+</tr>
+<tr>
+<td>&#xC4;</td>
+<td>@</td>
+<td>&#xE4;t</td>
+</tr>
+<tr>
+<td>M</td>
+<td>&#xB5;</td>
+<td><strong>m</strong>ikron</td>
+</tr>
+<tr>
+<td>O</td>
+<td>&#x20AC;</td>
+<td>o - rund wie eine M&#xFC;nze</td>
+</tr>
+<tr>
+<td>P</td>
+<td>&lt;</td>
+<td>linke Klammer</td>
+</tr>
+<tr>
+<td>&#xDC;</td>
+<td>&gt;</td>
+<td>rechte Klammer</td>
+</tr>
+<tr>
+<td><em><strong>Navigation</strong></em></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>,</td>
+<td>BildAb</td>
+<td>Mittelfinger nach <em>unten</em></td>
+</tr>
+<tr>
+<td>-</td>
+<td>Ende</td>
+<td>letzte Taste auf unterer Reihe</td>
+</tr>
+<tr>
+<td>H</td>
+<td>Pfeiltaste Links</td>
+<td>wie bei Vim, muss man einfach &#xFC;ben &#x1F609;</td>
+</tr>
+<tr>
+<td>I</td>
+<td>BildAuf</td>
+<td>Mittelfinger <em>hoch</em></td>
+</tr>
+<tr>
+<td>J</td>
+<td>Pfeiltaste Unten</td>
+<td>wie bei Vim</td>
+</tr>
+<tr>
+<td>K</td>
+<td>Pfeiltaste Hoch</td>
+<td>wie bei Vim</td>
+</tr>
+<tr>
+<td>L</td>
+<td>Pfeiltaste Rechts</td>
+<td>wie bei Vim</td>
+</tr>
+<tr>
+<td>N</td>
+<td>Pos1</td>
+<td>erste Taste (auf rechter Hand) in unterer Reihe</td>
+</tr>
+<tr>
+<td>&#xD6;</td>
+<td>Backspace</td>
+<td>beste freie Taste in Grundstellung f&#xFC;r h&#xE4;ufigste Funktion!</td>
+</tr>
+<tr>
+<td>U</td>
+<td>Del</td>
+<td>Delete / Entfernen ~ Undo</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>Ins</td>
+<td><strong>Z</strong>orro peitscht ein Loch in ein Tuch - Einf&#xFC;gen &#x1F609;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Backspace</td>
+<td>Delete</td>
+<td>zus&#xE4;tzliche M&#xF6;glichkeit f&#xFC;r Del / Entfernen</td>
+</tr>
+<tr>
+<td>Enter</td>
+<td>Alt-Tab</td>
+<td>zwischen Fenstern wechseln</td>
+</tr>
+<tr>
+<td>Space</td>
+<td>Esc</td>
+<td>besonders leicht zu tippen f&#xFC;r h&#xE4;ufige Funktion</td>
+</tr>
+<tr>
+<td>Rechts-Shift</td>
+<td>Any</td>
+<td>&#xF6;ffnet Website mit Suche f&#xFC;r alle Unicode-Zeichen</td>
+</tr>
+</tbody>
+</table>
+<h2 class="mume-header" id="hotstrings-textk%C3%BCrzel">Hotstrings &#x2013; Textk&#xFC;rzel</h2>
+
+<p>Die meisten K&#xFC;rzel kann man sicher leicht behalten. Die typische Form ist <strong>k&#xFC;rzelwort#</strong>  &#x2013; meist ist das K&#xFC;rzel 2 oder 3 Buchstaben und wird in aller Regel mit einem Hashtag beendet. Zeichen, die man &#xF6;fter braucht, wird man so schnell im Kopf &#x201E;abspeichern&#x201C;.</p>
+<p>Teilweise kann ein Zeichen mit mehreren K&#xFC;rzeln erzeugt werden. Das ist bewusst so gemacht, um m&#xF6;glichst leicht merkbare K&#xFC;rzel, ggf. auch mit Variationen, nutzen zu k&#xF6;nnen.</p>
+<table>
+<thead>
+<tr>
+<th><strong>K&#xFC;rzel</strong></th>
+<th><strong>Zeichen</strong></th>
+<th><strong>Merkhilfe</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Anf&#xFC;hrungszeichen doppelt</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ada#</td>
+<td>&#x201E;</td>
+<td>Anf&#xFC;hrungszeichen Deutsch - Anfang (99-Form)</td>
+</tr>
+<tr>
+<td>ade#</td>
+<td>&#x201C;</td>
+<td>Anf&#xFC;hrungszeichen Deutsch - Ende (66)</td>
+</tr>
+<tr>
+<td>aea#</td>
+<td>&#x201C;</td>
+<td>Anf&#xFC;hrungszeichen Englisch - Anfang (66)</td>
+</tr>
+<tr>
+<td>aee#</td>
+<td>&#x201D;</td>
+<td>Anf&#xFC;hrungszeichen Englisch - Ende (99)</td>
+</tr>
+<tr>
+<td><strong>Anf&#xFC;hrungszeichen doppelt K&#xFC;rzel-Alternativen</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&quot;da#</td>
+<td>&#x201E;</td>
+<td>Anf&#xFC;hrungszeichen Deutsch - Anfang (99)</td>
+</tr>
+<tr>
+<td>&quot;de#</td>
+<td>&#x201C;</td>
+<td>Anf&#xFC;hrungszeichen Deutsch - Ende (66)</td>
+</tr>
+<tr>
+<td>&quot;ea#</td>
+<td>&#x201C;</td>
+<td>Anf&#xFC;hrungszeichen Englisch - Anfang (66)  = Deutsch Ende</td>
+</tr>
+<tr>
+<td>&quot;ee#</td>
+<td>&#x201D;</td>
+<td>Anf&#xFC;hrungszeichen Englisch - Ende (99)</td>
+</tr>
+<tr>
+<td><strong>Guillemets - franz&#xF6;sische Anf&#xFC;hrungszeichen</strong></td>
+<td></td>
+<td>&#xAB;English and french&#xBB; bzw. &#xBB;Deutsch&#xAB;, siehe <a href="https://en.wikipedia.org/wiki/Guillemet">https://en.wikipedia.org/wiki/Guillemet</a> zur Verwendung</td>
+</tr>
+<tr>
+<td>&gt;&gt;#</td>
+<td>&#xBB;</td>
+<td></td>
+</tr>
+<tr>
+<td>&lt;&lt;#</td>
+<td>&#xAB;</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Anf&#xFC;hrungszeichen einfach</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>eda#</td>
+<td>&#x201A;</td>
+<td>Einfache (Anf&#xFC;hrungszeichen) Deutsch, Anfang (9)</td>
+</tr>
+<tr>
+<td>ede#</td>
+<td>&#x2018;</td>
+<td>Einfache (Anf&#xFC;hrungszeichen) Deutsch, Ende (6)</td>
+</tr>
+<tr>
+<td>eea#</td>
+<td>&#x2018;</td>
+<td>Einfache (Anf&#xFC;hrungszeichen) Englisch, Anfang (6) = Deutsch Ende</td>
+</tr>
+<tr>
+<td>eee#</td>
+<td>&#x2019;</td>
+<td>Einfache (Anf&#xFC;hrungszeichen) Englisch, Ende (9)</td>
+</tr>
+<tr>
+<td><strong>Anf&#xFC;hrungszeichen einfach - K&#xFC;rzelalternative</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&apos;da#</td>
+<td>&#x201A;</td>
+<td>(Anf&#xFC;hrungszeichen) Deutsch, Anfang (9)</td>
+</tr>
+<tr>
+<td>&apos;de#</td>
+<td>&#x2018;</td>
+<td>Anf&#xFC;hrungszeichen Deutsch, Ende (6)</td>
+</tr>
+<tr>
+<td>&apos;ea#</td>
+<td>&#x2018;</td>
+<td>Anf&#xFC;hrungszeichen Englisch, Anfang (6) = Deutsch Ende</td>
+</tr>
+<tr>
+<td>&apos;ee#</td>
+<td>&#x2019;</td>
+<td>Anf&#xFC;hrungszeichen Englisch, Ende (9)</td>
+</tr>
+<tr>
+<td><strong>Guillemets einfach</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;#</td>
+<td>&#x203A;</td>
+<td></td>
+</tr>
+<tr>
+<td>&lt;#</td>
+<td>&#x2039;</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Apostroph</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>apo#</td>
+<td>&#x2BC;</td>
+<td>apo# ist &#x2019;ne Abk&#xFC;rzung, die sich jeder merken kann &#x1F609;</td>
+</tr>
+<tr>
+<td><strong>Bindestriche und Leerzeichen</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n-#</td>
+<td>&#x2013;</td>
+<td>Gedankenstrich &#x2013; Halbgeviertstrich, en dash</td>
+</tr>
+<tr>
+<td>2-#</td>
+<td>&#x2013;</td>
+<td>Gedankenstrich &#x2013; Halbgeviertstrich, en dash</td>
+</tr>
+<tr>
+<td>m-#</td>
+<td>&#x2014;</td>
+<td>langer Gedankenstrich, Geviertstrich, em dash (nur im englischen und spanischen)</td>
+</tr>
+<tr>
+<td>3-#</td>
+<td>&#x2014;</td>
+<td>langer Gedankenstrich, Geviertstrich, em dash (nur im englischen und spanischen)</td>
+</tr>
+<tr>
+<td>g-#</td>
+<td>&#x2011;</td>
+<td>non-breaking hyphen, nicht trennbarer Bindestrich, <strong>g</strong>esch&#xFC;tzer Bindestrich</td>
+</tr>
+<tr>
+<td>nb-#</td>
+<td>&#x2011;</td>
+<td><strong>n</strong>on-<strong>b</strong>reaking hyphen, nicht trennbarer Bindestrich</td>
+</tr>
+<tr>
+<td>nt-#</td>
+<td>&#x2011;</td>
+<td>non-breaking hyphen, <strong>n</strong>icht <strong>t</strong>rennbarer Bindestrich</td>
+</tr>
+<tr>
+<td>s-#</td>
+<td>&#xAD;</td>
+<td>soft hyphen, unsichtbare vorgeschlagene Trennstelle, weiches Trennzeichen</td>
+</tr>
+<tr>
+<td>gl#</td>
+<td></td>
+<td><strong>g</strong>esch&#xFC;tztes <strong>L</strong>eerzeichen - non-breaking space</td>
+</tr>
+<tr>
+<td>nbs#</td>
+<td></td>
+<td>gesch&#xFC;tztes Leerzeichen - <strong>n</strong>on-<strong>b</strong>reaking <strong>s</strong>pace</td>
+</tr>
+<tr>
+<td>nbn#</td>
+<td></td>
+<td>gesch&#xFC;tztes schmales Leerzeichen - narrow non-breaking space (<strong>n</strong>on-<strong>b</strong>reaking-<strong>n</strong>arrow)</td>
+</tr>
+<tr>
+<td>gsl#</td>
+<td></td>
+<td><strong>g</strong>esch&#xFC;tztes <strong>s</strong>chmales <strong>L</strong>eerzeichen - narrow non-breaking space )</td>
+</tr>
+<tr>
+<td><strong>hochgestellte Zahlen und Zeichen</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>^0#</td>
+<td>&#x2070;</td>
+<td>hochgestellt 0</td>
+</tr>
+<tr>
+<td>^1#</td>
+<td>&#xB9;</td>
+<td>hochgestellt 1</td>
+</tr>
+<tr>
+<td>^2#</td>
+<td>&#xB2;</td>
+<td>hochgestellt 2</td>
+</tr>
+<tr>
+<td>^3#</td>
+<td>&#xB3;</td>
+<td>hochgestellt 3</td>
+</tr>
+<tr>
+<td>^4#</td>
+<td>&#x2074;</td>
+<td>hochgestellt 4</td>
+</tr>
+<tr>
+<td>^5#</td>
+<td>&#x2075;</td>
+<td>hochgestellt 5</td>
+</tr>
+<tr>
+<td>^6#</td>
+<td>&#x2076;</td>
+<td>hochgestellt 6</td>
+</tr>
+<tr>
+<td>^7#</td>
+<td>&#x2077;</td>
+<td>hochgestellt 7</td>
+</tr>
+<tr>
+<td>^8#</td>
+<td>&#x2078;</td>
+<td>hochgestellt 8</td>
+</tr>
+<tr>
+<td>^9#</td>
+<td>&#x2079;</td>
+<td>hochgestellt 9</td>
+</tr>
+<tr>
+<td>^+#</td>
+<td>&#x207A;</td>
+<td>hochgestellt +</td>
+</tr>
+<tr>
+<td>^-#</td>
+<td>&#x207B;</td>
+<td>hochgestellt -</td>
+</tr>
+<tr>
+<td>^=#</td>
+<td>&#x207C;</td>
+<td>hochgestellt =</td>
+</tr>
+<tr>
+<td>^(#</td>
+<td>&#x207D;</td>
+<td>hochgestellt Klammer links</td>
+</tr>
+<tr>
+<td>^)#</td>
+<td>&#x207E;</td>
+<td>hochgestellt Klammer rechts</td>
+</tr>
+<tr>
+<td><strong>hochgestellte Buchstaben</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>^a#</td>
+<td>&#x1D43;</td>
+<td>hochgestellt a, Achtung: bei allen Selbstlauten muss nach dem ^-Zeichen die Leertaste angeschlagen werden, um nicht <em>&#xE2;</em> usw. sondern <em>^a</em> zu erhalten</td>
+</tr>
+<tr>
+<td>^b#</td>
+<td>&#x1D47;</td>
+<td>hochgestellt b</td>
+</tr>
+<tr>
+<td>&#x2026;</td>
+<td></td>
+<td>wie f&#xFC;r a, b usw.</td>
+</tr>
+<tr>
+<td>^z#</td>
+<td>&#x1DBB;</td>
+<td>z hochgestellt</td>
+</tr>
+<tr>
+<td><strong>tiefgestellte Zahlen und Buchstaben</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>_a#</td>
+<td>&#x2090;</td>
+<td>tiefgestellt a</td>
+</tr>
+<tr>
+<td>&#x2026;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>_0#</td>
+<td>&#x2080;</td>
+<td>tiefgestellt 0</td>
+</tr>
+<tr>
+<td>&#x2026;</td>
+<td></td>
+<td>mit dem Unterstrich _ als Tiefstellzeichen und dem entsprechenden Zeichen lassen sich die folgenden Buchstaben und Zeichen eingeben: alle Zahlen von 0 bis 9, a, e, i, h, j, k, l, m, n, o, p, r, s, t, u, v, x und die Zeichen +, -, =, (, )</td>
+</tr>
+<tr>
+<td>_+2#</td>
+<td>&#x2A27;</td>
+<td>plus 2-Zeichen</td>
+</tr>
+<tr>
+<td>_beta#</td>
+<td>&#x1D66;</td>
+<td>tiefgestelltes beta</td>
+</tr>
+<tr>
+<td>_gamma#</td>
+<td>&#x1D67;</td>
+<td>tiefgestelltes gamma</td>
+</tr>
+<tr>
+<td>_rho#</td>
+<td>&#x1D68;</td>
+<td>tiefgestelltes rho</td>
+</tr>
+<tr>
+<td>_phi#</td>
+<td>&#x1D69;</td>
+<td>tiefgestelltes phi</td>
+</tr>
+<tr>
+<td>_chi#</td>
+<td>&#x1D6A;</td>
+<td>tiefgestelltes chi</td>
+</tr>
+<tr>
+<td><strong>Trema</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>e#</td>
+<td>&#xEB;</td>
+<td></td>
+</tr>
+<tr>
+<td>E#</td>
+<td>&#xCB;</td>
+<td></td>
+</tr>
+<tr>
+<td>i#</td>
+<td>&#xEF;</td>
+<td></td>
+</tr>
+<tr>
+<td>I#</td>
+<td>&#xCF;</td>
+<td></td>
+</tr>
+<tr>
+<td>y#</td>
+<td>&#xFF;</td>
+<td></td>
+</tr>
+<tr>
+<td>trema#</td>
+<td>&#xA8;</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Pfeile</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>-&gt;</td>
+<td>&#x2192;</td>
+<td>Pfeil</td>
+</tr>
+<tr>
+<td>ar#</td>
+<td>&#x2192;</td>
+<td>Pfeil (<strong>a</strong>rrow <strong>r</strong>ight)</td>
+</tr>
+<tr>
+<td>al#</td>
+<td>&#x2190;</td>
+<td>Pfeil links (<strong>a</strong>rrow <strong>l</strong>eft)</td>
+</tr>
+<tr>
+<td>&lt;-</td>
+<td>&#x2190;</td>
+<td>Pfeil links</td>
+</tr>
+<tr>
+<td>=&gt;</td>
+<td>&#x21D2;</td>
+<td>Doppelpfeil</td>
+</tr>
+<tr>
+<td>dr#</td>
+<td>&#x21D2;</td>
+<td>Doppelpfeil (<strong>d</strong>ouble [arrow] <strong>r</strong>ight)</td>
+</tr>
+<tr>
+<td>dl#</td>
+<td>&#x21D0;</td>
+<td>Doppelpfeil (<strong>d</strong>ouble [arrow] <strong>l</strong>eft)</td>
+</tr>
+<tr>
+<td>_&gt;</td>
+<td>&#x21E8;</td>
+<td>Wei&#xDF;er Pfeil</td>
+</tr>
+<tr>
+<td>wa#</td>
+<td>&#x21E8;</td>
+<td>Wei&#xDF;er Pfeil (<strong>w</strong>hite <strong>a</strong>rrow)</td>
+</tr>
+<tr>
+<td>lra#</td>
+<td>&#x2194;</td>
+<td><strong>l</strong>eft <strong>r</strong>ight <strong>a</strong>rrow</td>
+</tr>
+<tr>
+<td>lraa#</td>
+<td>&#x27F7;</td>
+<td><strong>l</strong>eft <strong>r</strong>ight <strong>a</strong>rrow <strong>a</strong> long</td>
+</tr>
+<tr>
+<td>lrda#</td>
+<td>&#x21D4;</td>
+<td><strong>l</strong>eft <strong>r</strong>ight <strong>d</strong>ouble <strong>a</strong>rrow</td>
+</tr>
+<tr>
+<td>lrdaa#</td>
+<td>&#x27FA;</td>
+<td><strong>l</strong>eft <strong>r</strong>ight <strong>d</strong>ouble <strong>a</strong>rrow <strong>a</strong> long</td>
+</tr>
+<tr>
+<td><strong>Mathe</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;=#</td>
+<td>&#x2265;</td>
+<td>greater or equal</td>
+</tr>
+<tr>
+<td>&lt;=#</td>
+<td>&#x2264;</td>
+<td>smaller or equal</td>
+</tr>
+<tr>
+<td>!=#</td>
+<td>&#x2260;</td>
+<td>unequal</td>
+</tr>
+<tr>
+<td>almost=#</td>
+<td>&#x2248;</td>
+<td>approximately, <strong>almost</strong> equal <strong>=</strong></td>
+</tr>
+<tr>
+<td>def#</td>
+<td>&#x225D;</td>
+<td>equal to definition</td>
+</tr>
+<tr>
+<td>almost=ra#</td>
+<td>&#x2975;</td>
+<td><strong>almost</strong> equal <strong>=</strong> <strong>r</strong>ight <strong>a</strong>rrow</td>
+</tr>
+<tr>
+<td>not#</td>
+<td>&#xAC;</td>
+<td><strong>not</strong></td>
+</tr>
+<tr>
+<td>-,#</td>
+<td>&#xAC;</td>
+<td></td>
+</tr>
+<tr>
+<td>xx#</td>
+<td>&#xD7;</td>
+<td></td>
+</tr>
+<tr>
+<td>div#</td>
+<td>&#xF7;</td>
+<td><strong>div</strong>ided</td>
+</tr>
+<tr>
+<td>:-#</td>
+<td>&#xF7;</td>
+<td></td>
+</tr>
+<tr>
+<td>-:#</td>
+<td>&#xF7;</td>
+<td></td>
+</tr>
+<tr>
+<td>%%#</td>
+<td>&#x2030;</td>
+<td>Promille</td>
+</tr>
+<tr>
+<td>%0#</td>
+<td>&#x2030;</td>
+<td>Promille</td>
+</tr>
+<tr>
+<td>prom#</td>
+<td>&#x2030;</td>
+<td><strong>Prom</strong>ille</td>
+</tr>
+<tr>
+<td>+-#</td>
+<td>&#xB1;</td>
+<td></td>
+</tr>
+<tr>
+<td>pm#&#xB1;</td>
+<td>&#xB1;</td>
+<td><strong>p</strong>lus <strong>m</strong>inus</td>
+</tr>
+<tr>
+<td>-+#</td>
+<td>&#x2213;</td>
+<td>minus / plus sign</td>
+</tr>
+<tr>
+<td>mp#</td>
+<td>&#x2213;</td>
+<td><strong>m</strong>inus / <strong>p</strong>lus sign</td>
+</tr>
+<tr>
+<td>dg#</td>
+<td>&#xB0;</td>
+<td><strong>d</strong>e<strong>g</strong>ree</td>
+</tr>
+<tr>
+<td>deg#</td>
+<td>&#xB0;</td>
+<td><strong>deg</strong>ree</td>
+</tr>
+<tr>
+<td>grad#</td>
+<td>&#xB0;</td>
+<td><strong>Grad</strong></td>
+</tr>
+<tr>
+<td>mu#</td>
+<td>&#xB5;</td>
+<td></td>
+</tr>
+<tr>
+<td>,u#</td>
+<td>&#xB5;</td>
+<td></td>
+</tr>
+<tr>
+<td>neg#</td>
+<td>-</td>
+<td><strong>neg</strong>ative Zahl, z.B. &#x2D7;3</td>
+</tr>
+<tr>
+<td>min#</td>
+<td>&#x2212;</td>
+<td><strong>min</strong>us, z.B. 2 &#x2212; 3 = &#x2D7;1</td>
+</tr>
+<tr>
+<td>prime#</td>
+<td>&#x2032;</td>
+<td>prime, z.B. der Farbwert u&#x2032;v&#x2032; betr&#xE4;gt &#x2026;</td>
+</tr>
+<tr>
+<td><strong>Br&#xFC;che</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12#</td>
+<td>&#xBD;</td>
+<td>halb</td>
+</tr>
+<tr>
+<td>13#</td>
+<td>&#x2153;</td>
+<td>drittel</td>
+</tr>
+<tr>
+<td>23#</td>
+<td>&#x2154;</td>
+<td></td>
+</tr>
+<tr>
+<td>14#</td>
+<td>&#xBC;</td>
+<td>viertel</td>
+</tr>
+<tr>
+<td>34#</td>
+<td>&#xBE;</td>
+<td></td>
+</tr>
+<tr>
+<td>15#</td>
+<td>&#x2155;</td>
+<td>f&#xFC;nftel</td>
+</tr>
+<tr>
+<td>25#</td>
+<td>&#x2156;</td>
+<td></td>
+</tr>
+<tr>
+<td>35#</td>
+<td>&#x2157;</td>
+<td></td>
+</tr>
+<tr>
+<td>45#</td>
+<td>&#x2158;</td>
+<td></td>
+</tr>
+<tr>
+<td>18#</td>
+<td>&#x215B;</td>
+<td>achtel</td>
+</tr>
+<tr>
+<td>38#</td>
+<td>&#x215C;</td>
+<td></td>
+</tr>
+<tr>
+<td>58#</td>
+<td>&#x215D;</td>
+<td></td>
+</tr>
+<tr>
+<td>78#</td>
+<td>&#x215E;</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Linien und Punkte</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>^_#</td>
+<td>&#xAF;</td>
+<td>Oberstrich</td>
+</tr>
+<tr>
+<td>*.#</td>
+<td>&#x2022;</td>
+<td>bullet dick</td>
+</tr>
+<tr>
+<td>..#</td>
+<td>&#xB7;</td>
+<td>bullet mini</td>
+</tr>
+<tr>
+<td>3.#</td>
+<td>&#x2026;</td>
+<td>3 Punkte als ein Zeichen, nicht trennbar!</td>
+</tr>
+<tr>
+<td><strong>W&#xE4;hrungen</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>pound#</td>
+<td>&#xA3;</td>
+<td>Pound (english)</td>
+</tr>
+<tr>
+<td>yen#</td>
+<td>&#xA5;</td>
+<td>Yen</td>
+</tr>
+<tr>
+<td>curr#</td>
+<td>&#xA4;</td>
+<td>Currency Allgemeines W&#xE4;hrungssymbol</td>
+</tr>
+<tr>
+<td>cent#</td>
+<td>&#xA2;</td>
+<td>Centzeichen</td>
+</tr>
+<tr>
+<td><strong>Verschiedenes</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>!#</td>
+<td>&#xA1;</td>
+<td>Umgekehrtes Ausrufezeichen</td>
+</tr>
+<tr>
+<td>--#</td>
+<td>&#xA6;</td>
+<td>unterbrochener Strich</td>
+</tr>
+<tr>
+<td>pg#</td>
+<td>&#xA7;</td>
+<td><strong>P</strong>ara<strong>g</strong>raph</td>
+</tr>
+<tr>
+<td>reg#</td>
+<td>&#xAE;</td>
+<td>Registered Trademark</td>
+</tr>
+<tr>
+<td>absatz#</td>
+<td>&#xB6;</td>
+<td>Absatzzeichen</td>
+</tr>
+<tr>
+<td>dh#</td>
+<td>&#x1F44D;</td>
+<td><strong>D</strong>aumen <strong>h</strong>och</td>
+</tr>
+<tr>
+<td>tu#</td>
+<td>&#x1F44D;</td>
+<td><strong>t</strong>humbs <strong>u</strong>p</td>
+</tr>
+<tr>
+<td>klopapier#</td>
+<td>&#x1F9FB;</td>
+<td>Toilettenpapier</td>
+</tr>
+</tbody>
+</table>
+<p>Zur korrekten typographischen Verwendung von Anf&#xFC;hrungszeichen, Bindestrichen usw. findet man auf der Neo-Webseite eine sch&#xF6;ne Zusammenfassung: <a href="https://neo-layout.org/Tips/Typografie-mit-Neo/">https://neo-layout.org/Tips/Typografie-mit-Neo/</a></p>
+<p>Kontakt: <a href="mailto:rpnfan@gmail.com">rpnfan@gmail.com</a></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
