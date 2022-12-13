@@ -1,10 +1,9 @@
-﻿; DeutschlandPlus 1.01
-; 2022-12-11
+﻿; DeutschlandPlus Version 2
+; 2022-12-12
 ; contact: rpnfan@gmail.com
 
 ; Der Strichpunkt ist das Kommentarzeichen - Entfernen, wenn eine Zeile wieder aktiv sein soll!
-
-; Versionssyntax: major.minorLaufendeNummer
+; Legende:
 ; + ergänzt
 ; - gelöscht
 ; ! Bugfix
@@ -14,6 +13,9 @@
 ;                       + zusätzliche hoch- und tiefgestellte Zeichen (minus, Buchstaben…)
 ;                       + weitere Zeichen (Währungen, Daumen-hoch usw.)
 ;                       ! arrows, minus/plus und µ korrigiert
+;               2       + Griechische Buchstaben
+;                       ~ Kürzel für Trema-Buchstaben nun mit ö als Abschluss statt #
+;                       ! negative Zahl, z. B.  ˗3
 
 
 ; =================== allgemeine Einstellungen ==============
@@ -124,6 +126,8 @@ sc03a & RShift:: OpenURL("https://www.amp-what.com") ; "Any-Key"
 ; :*: → * wird sofort aufgelöst, ohne Ende-Zeichen, wie Return, Tab, Space, [ usw.
 ; :?: → ? wird auch aufgelöst, wenn Ausdruck _in_ einem Wort vorkommt
 
+#Hotstring c ; globale Option, bis ggf. wieder geändert c → case sensitive, Option r → raw output
+
 ; Zeichen-Hotstrings
 
 ; Anführungszeichen
@@ -137,6 +141,8 @@ sc03a & RShift:: OpenURL("https://www.amp-what.com") ; "Any-Key"
 :*?:ede#::{U+2018} ; ‘ Anführungszeichen Deutsch, Ende (6)
 :*?:eea#::{U+2018} ; ‘ Anführungszeichen Englisch, Anfang (6) = Deutsch Ende
 :*?:eee#::{U+2019} ; ’ Anführungszeichen Englisch, Ende (9)
+
+:*?:eada#::{U+201A} ; ‚ Anführungszeichen Deutsch, Anfang (9)
 
 ; doppelt - mit Kürzelalternative
 :*?:"da#::{U+201E} ; „ Anführungszeichen Deutsch, Anfang (99)
@@ -289,11 +295,11 @@ sc03a & RShift:: OpenURL("https://www.amp-what.com") ; "Any-Key"
 
 
 ; Trema auf i und e (für Niederländisch)
-:*?:i#::ï
-:*?:e#::ë
-:*?:I#::Ï
-:*?:E#::Ë
-:*?:y#::ÿ
+:*?:iö::ï
+:*?:eö::ë 
+:*?:Iö::Ï
+:*?:Eö::Ë
+:*?:yö::ÿ
 
 ; ß als alternative Eingabemöglichkeit
 ; :*?:s#::ß
@@ -352,7 +358,7 @@ sc03a & RShift:: OpenURL("https://www.amp-what.com") ; "Any-Key"
 :*?:deg#::° ; degree
 :*?:grad#::° ; Grad
 :*?:mu#::µ
-:*?:neg#::{U+D27} ; - negative Zahl, z.B. ˗3
+:*?:neg#::{U+2D7} ; - negative Zahl, z.B. ˗3
 :*?:min#::{U+2212} ; −  minus, z.B. 2 − 3 = ˗1
 :*?:prime#::{U+2032} ; ′ prime, z.B. der Farbwert u′v′ beträgt …
 
@@ -378,8 +384,80 @@ sc03a & RShift:: OpenURL("https://www.amp-what.com") ; "Any-Key"
 :*?:reg#::{U+00AE} ; ® Registered Trademark
 :*?:absatz#::{U+00B6} ; ¶ Absatzzeichen
 :*?:klopapier#::{U+1F9FB} ; Toilettenpapier
+:*?:co#::{U+A9} ; Copyright 
+
+;Emoticons
 :*?:dh#::{U+1F44D} ; Daumen hoch
 :*?:tu#::{U+1F44D} ; thumbs up
+:*?:hand#::{U+1F44B} ; hand waving
+:*?::)#::{U+1F603} ; einfacher Smiley
+:*?::-D#::{U+1F600} ; Grin
+:*?::-D#::{U+1F603} ; Smiley
+:*?::-(#::{U+2639} ; traurig, frowning face
+:*?::-o#::{U+1F62E} ; offener Mund open mouth
+:*?:rotfl#::{U+1F923} ; rolling on the floor laughing
+:*?:;-)#::{U+1F609} ; Zwinkern (winking face)
+:*?:corona#::{U+1F637} ; mit Maske
+:*?:glasses#::{U+1F60E} ; mit Sonnenbrille (glasses)
+:*?:thinking#::{U+1F914} ; thinking, nachdenklich
+:*?:kiss#::{U+1F618} ; kiss - Kuss werfen
+
+
+; Griechische Buchstaben
+:*?:alpha#::{U+03B1} ; alpha
+:*?:beta#::{U+03B2} ; beta
+:*?:gamma#::{U+03B3} ; gamma
+:*?:delta#::{U+03B4} ; delta
+:*?:epsilon#::{U+03B5} ; epsilon
+:*?:zeta#::{U+03B6} ; zeta
+; eta → siehe unten
+:*?:theta#::{U+03B8} ; theta
+:*?:iota#::{U+03B9} ; iota
+:*?:kappa#::{U+03BA} ; kappa
+:*?:lambda#::{U+03BB} ; lambda
+:*?:mu#::{U+03BC} ; mu
+:*?:nu#::{U+03BD} ; nu
+:*?:xi#::{U+03BE} ; xi
+:*?:omicron#::{U+03BF} ; omicron
+:*?:pi#::{U+03C0} ; pi
+:*?:rho#::{U+03C1} ; rho
+:*?:sigma#::{U+03C3} ; sigma
+:*?:tau#::{U+03C4} ; tau
+:*?:upsilon#::{U+03C5} ; upsilon
+:*?:phi#::{U+03C6} ; phi
+:*?:chi#::{U+03C7} ; chi
+:*?:psi#::{U+03C8} ; psi
+:*?:omega#::{U+03C9} ; omega
+
+:*?:Alpha#::{U+0391} ; alpha - upper case
+:*?:Beta#::{U+0392} ; beta
+:*?:Gamma#::{U+0393} ; gamma
+:*?:Delta#::{U+0394} ; delta
+:*?:Epsilon#::{U+0395} ; epsilon
+:*?:Zeta#::{U+0396} ; zeta
+:*?:Eta#::{U+0397} ; eta
+:*?:Theta#::{U+0398} ; theta
+:*?:Iota#::{U+0399} ; iota
+:*?:Kappa#::{U+039A} ; kappa
+:*?:Lambda#::{U+039B} ; lambda  Λλ
+:*?:Mu#::{U+039C} ; mu
+:*?:Nu#::{U+039D} ; nu
+:*?:Xi#::{U+039E} ; xi
+:*?:Omicron#::{U+039F} ; omicron
+:*?:Pi#::{U+03A0} ; pi
+:*?:Rho#::{U+03A1} ; rho
+:*?:Sigma#::{U+03A3} ; sigma
+:*?:Tau#::{U+03A4} ; tau
+:*?:Upsilon#::{U+03A5} ; upsilon
+:*?:Phi#::{U+03A6} ; phi
+:*?:Chi#::{U+03A7} ; chi
+:*?:Psi#::{U+03A8} ; psi
+:*?:Omega#::{U+03A9} ; omega
+
+; eta hat sich hierher "verlaufen", damit es nicht andere Kürzel auslöst. Die Reihenfolge der Definition von Hotstrings ist nicht egal, sondern Teilhotstrings müssen _nach_ einem längerne Hotstring kommen.
+:*?:eta#::{U+03B7} ; eta
+
+
 
 ; Unicode-Zeichen können mit {+xxxx} folgende Weise realisiert werden, siehe die vielen Beispiele im Skript
 ; Herzchen, Smileys usw. gibt es auch als Unicode, brauch' ich nie und hab' ich mir gespart... einfach entsprechend erweitern wer Zeichen vermisst und mit für ihm sinnigen Kürzel belegen! :-)
@@ -421,14 +499,14 @@ sc03a & RShift:: OpenURL("https://www.amp-what.com") ; "Any-Key"
 Mit freundlichem Gruß
 Michael Mustermann
 )
-return
+
 
 :*:sige#::
 (
 Best regards
 John Doe
 )
-return
+
 
 ; Gaaaanz langer Hotstring - Beispiel
 :*:langbeispiel#::
@@ -439,11 +517,18 @@ das ist ein langer Beispieltext mit Returns. Donec lobortis risus sed justo temp
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar ipsum ex, at posuere eros commodo sit amet. Nunc nec suscipit mauris, a pellentesque velit. Cras scelerisque fringilla purus. Donec commodo consectetur mi non tempus. Nunc placerat ligula et ligula sagittis feugiat. Sed nec quam ipsum. Maecenas faucibus imperdiet dui at pellentesque. Vivamus sed risus at lectus ultricies fermentum quis eget turpis. Praesent a euismod turpis. Donec sed purus semper, iaculis nibh in, porta tortor. Pellentesque a elementum velit, a luctus tortor. Donec bibendum lectus nec pharetra tincidunt. Aenean at mollis neque, ut ultrices arcu.
 )
-return
 
 
-
-
+; =========== TODO ============
+; fix i# und e# usw. als Teil eines anderen Hotstrings möglich!  
+; ———– check out ———-
+; Teile von Hotstrings zulassen
+/* ; uncomment block - begin
+#InputLevel 1
+:*?X:--::Send {U+2013}	; En Dash, hostring is <hyphen><hyphen>
+#InputLevel 0			; here redundant - but only if no other hotkeys or (non-auto-replace) hotstrings follow
+:*?:–-::{U+2014}		; Em Dash, hotstring is <en dash><hyphen>
+*/ ; uncomment block - end
 
 
 ; vim: set nowrap tw=0 syn=ahk:
