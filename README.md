@@ -1,5 +1,7 @@
 2022-12-21
 
+![image](https://github.com/user-attachments/assets/d099144d-bb52-43f0-a631-8ba978e43764)
+
 # DeutschlandPlus
 Adding easy to access symbols, a navigation layer and functions to the standard German keyboard layout (for Windows)
 
