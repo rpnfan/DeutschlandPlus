@@ -9,7 +9,7 @@ Adding easy to access symbols, a navigation layer and functions to the standard 
 Kopiere eine der beiden ausführbaren (.exe-Dateien) und die Hilfe-Datei (DeutschlandPlus-Hilfe.html) in einen Ordner deiner Wahl. Alternativ kann auch das Autohotkey-Script genutzt werden, wenn Autohotkey installiert ist.
 
 ## Hilfe
-CapsLock+F1 öffnet eine Übersicht aller verfügbarer Zeichen. Eine ausführliche Beschreibung der Benutzung des Programms als solches, mit Screenshots findet sich auf meiner Homepage [keyboard heaven](https://rpnfan.github.io/keyboard-heaven/)  
+CapsLock+F1 öffnet eine Übersicht aller verfügbarer Zeichen. Eine ausführliche Beschreibung der Benutzung des Programms als solches, mit Screenshots findet sich auf meiner Homepage [keyboard heaven](https://rpnfan.github.io/keyboard-heaven/after-party/deutschlandplus/)  
 
 ## Bequemer und schneller tippen mit DeutschlandPlus
 *Bequeme Navigation, Sonderzeichen [ ] { } \ @ € µ … und mehr*
