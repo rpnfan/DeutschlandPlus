@@ -3,7 +3,9 @@
 ![image](https://github.com/user-attachments/assets/d099144d-bb52-43f0-a631-8ba978e43764)
 
 # Bequemer und schneller tippen mit DeutschlandPlus
-*Bequeme Navigation, Sonderzeichen [ ] { } \ @ € µ … und mehr*
+*Bequeme Navigation, Sonderzeichen [ ] { } \ @ € µ … und mehr.*
+
+*DeutschlandPlus ist eine Erweiterung für das deutsche Standardlayout und bleibt dabei zu 100 % kompatibel mit jedem PC.*
 
 Wer programmiert, Texte in LaTeX schreibt oder auch einfach nur das @-Zeichen bequem eingeben will, hat sich sicher schon gefragt warum wichtige Zeichen wie eckige Klammern im deutschen Tastaturlayout nur über die als Tastschreiber schwierig zu erreichende AltGr-Taste eingefügt werden können. Nicht wenige nutzen deswegen das englische Tastaturlayout. Dann fehlen aber die Umlaute und man kann den Rechner auch schwieriger mit anderen teilen. Eine kostenlose und anpassbare Lösung für ein deutsches Tastataturlayout welches diese Probleme komplett behebt, aber dabei keine Änderungen an der deutschen Standardtastaturbelegung vornimmt wird hier vorgestellt.
 
