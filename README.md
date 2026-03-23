@@ -1,20 +1,83 @@
-2022-12-21
+> *This project is in German because it is specifically designed for the German keyboard layout and primarily targets German-speaking users.*
 
-![image](https://github.com/user-attachments/assets/d099144d-bb52-43f0-a631-8ba978e43764)
+---
 
-# Bequemer und schneller tippen mit DeutschlandPlus
-*Bequeme Navigation, Sonderzeichen [ ] { } \ @ € µ … und mehr.*
+![DeutschlandPlus](https://github.com/user-attachments/assets/d099144d-bb52-43f0-a631-8ba978e43764)
 
-*DeutschlandPlus ist eine Erweiterung für das deutsche Standardlayout und bleibt dabei zu 100 % kompatibel mit jedem PC.*
+# DeutschlandPlus – Das QWERTZ-Upgrade
 
-Wer programmiert, Texte in LaTeX schreibt oder auch einfach nur das @-Zeichen bequem eingeben will, hat sich sicher schon gefragt warum wichtige Zeichen wie eckige Klammern im deutschen Tastaturlayout nur über die als Tastschreiber schwierig zu erreichende AltGr-Taste eingefügt werden können. Nicht wenige nutzen deswegen das englische Tastaturlayout. Dann fehlen aber die Umlaute und man kann den Rechner auch schwieriger mit anderen teilen. Eine kostenlose und anpassbare Lösung für ein deutsches Tastataturlayout welches diese Probleme komplett behebt, aber dabei keine Änderungen an der deutschen Standardtastaturbelegung vornimmt wird hier vorgestellt.
+**Bequem tippen ohne AltGr-Verrenkungen. Schnelle Navigation aus der Grundstellung. Kostenlos, kompatibel, sofort nutzbar.**
 
-Als Bonus erlaubt es obendrein die schnelle Navigation aus der Grundstellung und erspart somit den Griff zum Navigationsblock (Pfeiltasten, Pos1, End…) und häufig sogar den Griff zur Maus. Die Lösung ist für "Blindschreiber" optimiert, aber bietet auch Vorteile, wenn man (noch) nicht die komplette Tastatur blind beherrscht.
+DeutschlandPlus ist eine Erweiterung für das deutsche Standardlayout – und bleibt dabei zu 100 % damit kompatibel. Wer programmiert, LaTeX schreibt oder einfach nur das `@`-Zeichen bequem eingeben will, profitiert sofort.
 
-Das hier vorgestellte Programm ist für Windows entwickelt und mit Autohotkey realisiert. Das Konzept lässt sich aber auch unter Linux oder Mac OS umsetzen. Der Grundgedanke ist, dass man die Feststelltaste (CapsLock) als zusätzliche Modifiertaste verwendet und damit eine vergrößerte Funktionalität erreicht. Am deutschen Tastaturlayout als solches wird nichts geändert. Das hat den Vorteil, dass man zum einen den Rechner jederzeit mit anderen teilen kann. Zum anderen hat man auch keine Probleme, wenn man selbst an einem anderen Rechner arbeiten muss, bei dem DeutschlandPlus nicht aktiv ist. Nicht zuletzt funktioniert diese Lösung auch in gleicher Weise nicht nur auf allen üblichen Tastaturen, sondern auch bei Notebooks, die teils eine abweichende Anordnung der Tasten haben. Für mich hat sich DeutschlandPlus nun schon seit 2007 bewährt und wurde 15 Jahre aktiv von mir genutzt. Seit 2023 nutze ich ein eigenes Tastaturlayout [anymak:END](https://github.com/rpnfan/Anymak) mit umfassend erweiterte Navigations- und Symbolebenen.
+---
 
-## Installation
-Kopiere eine der beiden ausführbaren (.exe-Dateien) und die Hilfe-Datei (DeutschlandPlus-Hilfe.html) in einen Ordner deiner Wahl. Alternativ kann auch das Autohotkey-Script genutzt werden, wenn Autohotkey installiert ist.
+## Das Problem
+
+Im deutschen Tastaturlayout sind wichtige Zeichen wie `[ ] { } \ @` nur über **AltGr** erreichbar – eine Taste, die für Tastschreiber schlecht sitzt und oft beide Hände bindet. Viele weichen deshalb auf das englische Layout aus, verlieren dabei aber die Umlaute und können den Rechner schlecht mit anderen teilen.
+
+## Die Lösung
+
+DeutschlandPlus macht die **CapsLock-Taste** zur zusätzlichen Modifier-Taste. Damit sind alle wichtigen Sonderzeichen und die Navigation bequem aus der Grundstellung erreichbar – ohne dass sich an der deutschen Standardbelegung irgendetwas ändert.
+
+### Sonderzeichen
+
+| Tastenkombination | Zeichen | Merkhilfe |
+|---|---|---|
+| `CapsLock + 7` | `{` | |
+| `CapsLock + 8` | `[` | |
+| `CapsLock + 9` | `]` | |
+| `CapsLock + 0` | `}` | |
+| `CapsLock + -` | `\` | |
+| `CapsLock + 5` | `€` | |
+| `CapsLock + Ä` | `@` | „ät" |
+| `CapsLock + <` | `\|` | auch auf US-Tastaturen |
+
+### Navigation aus der Grundstellung
+
+| Tastenkombination | Funktion |
+|---|---|
+| `CapsLock + H / J / K / L` | ← ↓ ↑ → (wie Vim) |
+| `CapsLock + Y / O` | Pos1 / Ende |
+| `CapsLock + U / I` | Bild↑ / Bild↓ |
+| `CapsLock + Ö` | Backspace |
+| `CapsLock + Ü` | Entfernen (Del) |
+| `CapsLock + Enter` | Alt+Tab (Programmwechsel) |
+| `CapsLock + Leertaste` | ESC |
+
+Zusätzlich gibt es **Textkürzel (Hotstrings)** für weitere Sonderzeichen, z. B. `=>` → `⇒` oder `alpha#` → `α`.
+
+---
+
+## Installation (Windows)
+
+**Option A – Ausführbare Datei (empfohlen)**
+
+1. `.exe`-Datei und `DeutschlandPlus-Hilfe.html` herunterladen
+2. Beide Dateien in einen Ordner deiner Wahl kopieren
+3. `.exe` starten – fertig. Keine Installation nötig, läuft auch vom USB-Stick ohne Admin-Rechte.
+
+**Option B – AutoHotkey-Skript (für Anpassungen)**
+
+1. [AutoHotkey](https://www.autohotkey.com/) installieren
+2. Das `.ahk`-Skript herunterladen und bei Bedarf anpassen
+3. Verknüpfung zum Skript im Autostart-Ordner ablegen
+
+Das Skript ist gut dokumentiert und lässt sich leicht um eigene Hotstrings und Tastenkombinationen erweitern.
+
+> **Hinweis:** Das Konzept lässt sich auch unter Linux und macOS umsetzen – die vorliegenden Dateien sind jedoch für Windows entwickelt.
+
+---
 
 ## Hilfe
-CapsLock+F1 öffnet eine Übersicht aller verfügbarer Zeichen. Eine ausführliche Beschreibung der Benutzung des Programms als solches, mit Screenshots findet sich auf meiner Homepage [keyboard heaven](https://rpnfan.github.io/keyboard-heaven/after-party/deutschlandplus/)  
+
+`CapsLock + F1` öffnet eine Übersicht aller verfügbaren Zeichen und Funktionen.
+
+Eine ausführliche Beschreibung mit Screenshots, Lernreihenfolge und bekannten Limitationen findet sich im Begleitartikel:  
+👉 [DeutschlandPlus – Das QWERTZ-Upgrade](https://rpnfan.github.io/keyboard-heaven/after-party/deutschlandplus/)
+
+---
+
+## Hintergrund & Weiterentwicklung
+
+DeutschlandPlus hat sich seit 2008 in der täglichen Nutzung bewährt. Wer noch weiter gehen und tiefer in optimierte Tastaturlayouts einsteigen will, findet in [Spacemak](https://github.com/rpnfan/Spacemak) und [Anymak](https://github.com/rpnfan/Anymak) die nächsten Schritte.
