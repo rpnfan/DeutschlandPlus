@@ -1,6 +1,5 @@
 > *This project is in German because it is specifically designed for the German keyboard layout and primarily targets German-speaking users.*
 
----
 
 ![DeutschlandPlus](https://github.com/user-attachments/assets/d099144d-bb52-43f0-a631-8ba978e43764)
 
@@ -10,7 +9,6 @@
 
 DeutschlandPlus ist eine Erweiterung für das deutsche Standardlayout – und bleibt dabei zu 100 % damit kompatibel. Wer programmiert, LaTeX schreibt oder einfach nur das `@`-Zeichen bequem eingeben will, profitiert sofort.
 
----
 
 ## Das Problem
 
@@ -47,7 +45,7 @@ DeutschlandPlus macht die **CapsLock-Taste** zur zusätzlichen Modifier-Taste. D
 
 Zusätzlich gibt es **Textkürzel (Hotstrings)** für weitere Sonderzeichen, z. B. `=>` → `⇒` oder `alpha#` → `α`.
 
----
+
 
 ## Installation (Windows)
 
@@ -67,7 +65,6 @@ Das Skript ist gut dokumentiert und lässt sich leicht um eigene Hotstrings und 
 
 > **Hinweis:** Das Konzept lässt sich auch unter Linux und macOS umsetzen – die vorliegenden Dateien sind jedoch für Windows entwickelt.
 
----
 
 ## Hilfe
 
@@ -76,7 +73,7 @@ Das Skript ist gut dokumentiert und lässt sich leicht um eigene Hotstrings und 
 Eine ausführliche Beschreibung mit Screenshots, Lernreihenfolge und bekannten Limitationen findet sich im Begleitartikel:  
 👉 [DeutschlandPlus – Das QWERTZ-Upgrade](https://rpnfan.github.io/keyboard-heaven/after-party/deutschlandplus/)
 
----
+
 
 ## Hintergrund & Weiterentwicklung
 
